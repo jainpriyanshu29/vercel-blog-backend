@@ -222,3 +222,10 @@ app.delete("/delete-task/:taskId", async (req, res) => {
 app.listen(port, () => {
   console.log(`server is running on port : ${port}`);
 });
+
+
+// /////////////////////////////////////////////////////////////////////////
+// check for vercel running or not
+app.get("/" , (req,res)=>{
+  res.send("Welcome to backend code...")
+})
