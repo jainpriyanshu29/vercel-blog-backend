@@ -16,7 +16,7 @@ const port = 8800;
 // cors setup
 app.use(cors());
 app.use(cors({
-  origin: "https://vercel-frontend-roan.vercel.app/", // your actual Vercel domain
+  origin: "https://vercel-frontend-roan.vercel.app", // your actual Vercel domain
   credentials: true
 }));
 
