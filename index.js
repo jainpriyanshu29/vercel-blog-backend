@@ -12,7 +12,15 @@ const authenticateUser = require("./auth");
 require("dotenv").config();
 
 const port = 8800;
+
+// cors setup
 app.use(cors());
+app.use(cors({
+  origin: "https://vercel-frontend-eight-swart.vercel.app", // your actual Vercel domain
+  credentials: true
+}));
+
+
 connectDB();
 app.use(bodyParser.json());
 
